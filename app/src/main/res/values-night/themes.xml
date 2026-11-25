@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.ElectricityBillEstimator"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">#0D4F4A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#356B65</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSurface">#F3F8F7</item>
+        <item name="colorOnSurface">#172927</item>
+        <item name="android:windowBackground">#F3F8F7</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.ElectricityBillEstimator"
+        parent="Base.Theme.ElectricityBillEstimator" />
+
+</resources>

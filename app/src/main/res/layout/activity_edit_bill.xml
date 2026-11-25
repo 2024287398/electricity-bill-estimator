@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Bill"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@id/spinnerEditMonth"
+            android:text="Month" />
+
+        <Spinner
+            android:id="@+id/spinnerEditMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/months"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextEditUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Electricity used (1–1000 kWh)"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textEditRebate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Rebate 0%" />
+
+        <SeekBar
+            android:id="@+id/seekBarEditRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Rebate percentage"
+            android:max="5"
+            android:minHeight="48dp"
+            android:progress="0" />
+
+        <Button
+            android:id="@+id/buttonSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Save Changes" />
+
+    </LinearLayout>
+
+</ScrollView>
